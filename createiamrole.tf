@@ -8,7 +8,12 @@ resource "aws_iam_role" "CloudWatchLoggingRole" {
   assume_role_policy = "${file("CloudWatchLoggingRole.json")}"
 }
 
-resource "aws_iam_role" "LambdaExcutionRole" {
+resource "aws_iam_role" "Lambdaexecutionpolicy" {
   name               = "LambdaExcutionRole"
   assume_role_policy = "${file("LambdaExcutionRole.json")}"
+}
+
+resource "aws_iam_role" "TransferIdentityProviderRole" {
+  name               = "TransferIdentityProviderRole"
+  assume_role_policy = "${file("TransferIdentityProviderRole.json")}"
 }
