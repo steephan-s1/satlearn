@@ -10,10 +10,10 @@ resource "aws_iam_policy" "TransferLogPolicy" {
   policy      = "${file("TransferLogPolicy.json")}"
 }
 
-resource "aws_iam_policy" "LambadaBasicExecutionPolicy" {
+resource "aws_iam_policy" "LambdaBasicExecutionPolicy" {
   name        = "LambadaBasicExecutionPolicy"
   description = "LambadaBasicExecutionPolicy"
-  policy      = "${file("LambadaBasicExecutionPolicy.json")}"
+  policy      = "${file("LambdaBasicExecutionPolicy.json")}"
 }
 
 resource "aws_iam_policy" "LambdaSecretsPolicy" {
