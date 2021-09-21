@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "execute-api:Invoke"
+            ],
+            "Resource": "arn:aws:execute-api:ap-south-1:547155362487:*/*/GET/*",
+            "Effect": "Allow"
+        }
+    ]
+}

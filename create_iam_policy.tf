@@ -21,3 +21,15 @@ resource "aws_iam_policy" "LambdaSecretsPolicy" {
   description = "LambdaSecretsPolicy "
   policy      = "${file("LambdaSecretsPolicy.json")}"
 }
+
+resource "aws_iam_policy" "TransferCanInvokeThisApi" {
+  name        = "TransferCanInvokeThisApi"
+  description = "TransferCanInvokeThisApi"
+  policy      = "${file("TransferCanInvokeThisApi.json")}"
+}
+
+resource "aws_iam_policy" "TransferCanReadThisApi" {
+  name        = "TransferCanReadThisApi"
+  description = "TransferCanReadThisApi"
+  policy      = "${file("TransferCanReadThisApi.json")}"
+}
